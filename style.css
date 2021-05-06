@@ -1,0 +1,132 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+#instructions {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.bg-outer {
+    background-color: #BB0B0E;
+    width: 670px;
+    height: 570px;
+    margin: 100px auto 50px auto;
+    border-radius: 65px;
+    position: relative;
+}
+
+.bg-inner {
+    background-color: #EB0E0E;
+    width: 650px;
+    height: 550px;
+    border-radius: 50px;
+    position: absolute;
+    left: 10px;
+    top: -1px;
+}
+
+#eas-screen-outer {
+    width: 450px;
+    height: 320px;
+    background-color: #8d0d10;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    border-radius: 20px;
+}
+
+#eas-screen-inner {
+    background-color: #D5D8D1;
+    width: 440px;
+    height: 296px;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    border-radius: 15px;
+}
+
+.rotor {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+}
+
+.inner-rotor {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    /*box-shadow: inset -2px -17px 26px -10px #a3a3a3;*/
+}
+
+#left-outer-rotor {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+}
+
+#right-outer-rotor {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+#left-inner-rotor {
+    transform-origin: 50% 50%;
+}
+
+#right-inner-rotor {
+    transform-origin: 50% 50%;
+}
+
+.triangle-indicator {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgb(114, 114, 114);
+    position: absolute;
+    left: 45px;
+    top: 4px;
+}
+
+.shake {
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+.fade {
+    
+}
+
+@keyframes bounce {
+    15% {
+        transform: translateX(-180px);
+    }
+    
+    25% {
+        transform: translateX(180px);
+    }
+
+    35% {
+        transform: translateX(-180px);
+    }
+
+    45% {
+        transform: translateX(180px);
+    }
+
+    65% {
+        transform: translateX(-180px);
+    }
+
+    
+}

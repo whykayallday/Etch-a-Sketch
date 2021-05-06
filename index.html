@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <title>Etch-A-Sketch</title>
+    </head>
+
+    <body>
+        <div id="instructions">
+            <p>Use your arrow keys to draw.</p>
+            <p>Press space to erase your masterpiece!</p>
+        </div>
+        <div id="eas-outer" class="bg-outer">
+            <div id="eas-inner" class="bg-inner">
+                <div id="eas-screen-outer">
+                    <div id="eas-screen-inner">
+                        <canvas id="draw"></canvas>
+                    </div>
+                </div>
+
+                <div id="left-outer-rotor" class="rotor">
+                    <div id="left-inner-rotor" class="inner-rotor">
+                        <div class="triangle-indicator"></div>
+                    </div>
+                </div>
+                <div id="right-outer-rotor" class="rotor">
+                    <div id="right-inner-rotor" class="inner-rotor">
+                        <div class="triangle-indicator"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
